@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desarrollador frontend">
+    <meta name="og:description" content="Portafolio personal de Juan Esteban Isaza Gómez donde presento mis proyectos, mi proceso de trabajo y las habilidades que he desarrollado. Incluye ejemplos reales de código, buenas prácticas y las tecnologías que uso con mayor frecuencia.">
+    <meta name="og:title" content="Portafolio - Juan Esteban Isaza Gómez">
+    <meta name="og:image" content="https://juanestebanig.github.io/src/assets/project-3.jpg">
+    <title>Portafolio - Juan Esteban Isaza Gómez</title>
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <button class="header__show-nav" id="showNav"></button>
+        
+        <nav class="menu" id="menu">
+            <ul class="menu__ul">
+                <li class="menu__item">
+                    <a href="#hero" class="menu__link">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#about" class="menu__link">Sobre mí</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#skills" class="menu__link">Habilidades</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#projects" class="menu__link">Proyectos</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#contact" class="menu__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="hero" id="hero">
+            <div class="hero-left">
+                <p class="hero__paragraph">¡Hola! mi nombre es</p>
+                <h1 class="hero__title">Juan Esteban Isaza Gómez </h1>
+                <p class="hero__paragraph Hero__write-machine" id="heroWriteMachine">Desarrollador de software</p>
+                <div class="hero__contact">
+                    <a href="https://github.com/JuanEstebanIG" class="hero__link" target="_blank">
+                        <img src="./src/assets/github.svg" alt="Icon GitHub" class="hero__icon">
+                    </a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <p class="hero__description">
+                    Construyo <span class="animate-text">aplicaciones web</span> con arquitectura escalable y
+                    JavaScript moderno. Especializado en transformar requisitos
+                    complejos en <span class="animate-text"> código limpio</span> fácil de mantener.
+                </p>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h3 class="about__title">Sobre mí</h3>
+            <div class="about__container">
+                <article class="about__card">
+                    <div class="about__card-header-bar">
+                        <div class="about__card-container-circles">
+                            <span class="about__card-circle1 about__card-circle"></span>
+                            <span class="about__card-circle2 about__card-circle"></span>
+                            <span class="about__card-circle3 about__card-circle"></span> 
+                        </div>
+                        <p class="about__card-title">Info.JSON</p>
+                    </div>
+                    <div class="about__card-aside-bar"></div>
+
+                    <p class="about__card-info">
+                        <span class="about__card-num1">{</span><br><br>
+                        <span class="about__card-num2 about__card-variable">name</span>: <span class="about__card-string">"Juan Esteban Isaza Gómez"</span>,<br> <br>
+                        <span class="about__card-num3 about__card-variable">age</span>: <span class="about__card-nums">20</span>,<br> <br>
+                        <span class="about__card-num4 about__card-variable">location</span> : <span class="about__card-string">"Colombia, Bello - Antioquia"</span>,<br> <br>
+                        <span class="about__card-num5 about__card-variable">mainStack</span>: <span class="about__card-brackets">[</span> <span class="about__card-string">"HTML"</span>,<span class="about__card-string">"CSS"</span> ,<span class="about__card-string">"JS"</span> ,<span class="about__card-string">"Git"</span> ,<span class="about__card-string"> "GitHub"</span> <span class="about__card-brackets">]</span>,<br> <br>
+                        <span class="about__card-num6 about__card-variable">email</span>: <span class="about__card-string">"isazaj601@gmail.com"</span>
+                        <br>
+                        <br>
+                        <span class="about__card-num7">}</span>        
+                    </p>
+                </article>
+                <p class="about__paragraph">
+                    Me apasiona la idea de que el software pueda <span class="animate-text">resolver problemas
+                        reales </span> y mejorar la forma en que las
+                    personas interactúan con la tecnología. Disfruto construir interfaces dinámicas, funcionales y
+                    eficientes, cuidando tanto la experiencia del usuario como la solidez técnica detrás de cada
+                    interacción. Actualmente enfoco mi aprendizaje en fortalecer mi <span
+                        class="animate-text">dominio de HTML, CSS y JavaScript</span>,
+                    además de explorar bases de datos y herramientas backend que me permitan completar el ciclo de
+                    desarrollo.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="projects__title">Proyectos</h2>
+
+            <div class="projects__container-projects">
+
+                <article class="project">
+                    <img src="./src/assets/project-1.jpg" alt="DashBoard basico de CriptoMonedas" class="project__img">
+                    <h3 class="project__title">DashBoard criptomonedas</h3>
+                    <p class="project__description">Dashboard basico con el cual puedes visualizar el precio de las principales criptomonedas del
+                        mercado en tiempo real.
+                    </p>
+                    <div class="project__container-technologies">
+                        <span class="project__technologie">HTML</span>
+                        <span class="project__technologie">CSS</span>
+                        <span class="project__technologie">JavaScript</span>
+                        <span class="project__technologie">chart.js</span>
+                    </div>
+                    <div class="project__container-buttons">
+                        <a href="https://juanestebanig.github.io/Crypto-Dashboard/" target="_blank" class="project__link">Ver Demo</a>
+                        <a href="https://github.com/JuanEstebanIG/Crypto-Dashboard" target="_blank" class="project__link">Código</a>
+                    </div>
+                </article>
+                
+                <article class="project">
+                    <img src="./src/assets/project-2.jpg" alt="Calculadora de Bases numericas (Octal, Decimal, Hexadecimal, Binario)" class="project__img">
+                    <h3 class="project__title">Conversor de bases numéricas</h3>
+                    <p class="project__description">Calculadora web para convertir números entre sistemas binario, octal, decimal y hexadecimal.
+                    </p>
+                    <div class="project__container-technologies">
+                        <span class="project__technologie">HTML</span>
+                        <span class="project__technologie">CSS</span>
+                        <span class="project__technologie">JavaScript</span>
+                    </div>
+                    <div class="project__container-buttons"> 
+                        <a href="https://juanestebanig.github.io/Conversor-de-Sistemas-Numericos/" target="_blank" class="project__link">Ver Demo</a>
+                        <a href="https://github.com/JuanEstebanIG/Conversor-de-Sistemas-Numericos" target="_blank" class="project__link">Código</a>
+                    </div>
+                </article>
+                <article class="project">
+                    <img src="./src/assets/project-3.jpg" alt="Portafolio personal de Juan Esteban Isaza Gomez" class="project__img">
+                    <h3 class="project__title">Portafolio personal</h3>
+                    <p class="project__description">
+                        Portafolio personal donde presento mis proyectos, mi proceso de trabajo y las habilidades
+                        que he desarrollado. Incluye ejemplos reales de código, buenas prácticas y las tecnologías que uso con mayor frecuencia.
+                    </p>
+                    <div class="project__container-technologies">
+                        <span class="project__technologie">HTML</span>
+                        <span class="project__technologie">CSS</span>
+                        <span class="project__technologie">JavaScript</span>
+                    </div>
+                    <div class="project__container-buttons"> 
+                        <a href="https://juanestebanig.github.io/portafolio/" target="_blank" class="project__link">Ver Demo</a>
+                        <a href="https://github.com/JuanEstebanIG/portafolio" target="_blank" class="project__link">Código</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+                <h2 class="skills__title">Habilidades</h2>
+                <div class="skills__cards">
+                    <figure class="skills__figure">
+                        <img class=" skills__img" src="./src/assets/html5.svg" alt="logo HTML" class="skill__icon">
+                        <figcaption class="skills__caption">HTML <br><span class="skills__card-level">Intermedio</span></figcaption>
+                    </figure>
+                    <figure class="skills__figure">
+                        <img class=" skills__img" src="./src/assets/css.svg" alt="logo CSS" class="skill__icon">
+                        <figcaption class="skills__caption">CSS <br><span class="skills__card-level">Intermedio</span></figcaption>
+                    </figure>
+                    <figure class="skills__figure">
+                        <img class=" skills__img" src="./src/assets/javascript.svg" alt="logo JS" class="skill__icon">
+                        <figcaption class="skills__caption">JavaScript <br><span class="skills__card-level">Intermedio</span></figcaption>
+                    </figure>
+                        <figure class="skills__figure">
+                        <img class=" skills__img" src="./src/assets/mysql-wordmark-light.svg" alt="logo MySQL" class="skill__icon">
+                        <figcaption class="skills__caption">MySQL <br><span class="skills__card-level">Básico</span></figcaption>
+                    </figure>                    <figure class="skills__figure">
+                        <img class=" skills__img" src="./src/assets/python.svg" alt="logo Python" class="skill__icon">
+                        <figcaption class="skills__caption">Python <br><span class="skills__card-level">Básico</span></figcaption>
+                    </figure>
+                    </figure>                   
+                    <figure class="skills__figure">
+                        <img class=" skills__img" src="./src/assets/git.svg" alt="logo Git" class="skill__icon">
+                        <figcaption class="skills__caption">Git<br> <span class="skills__card-level">Básico</span></figcaption>
+                    </figure>
+                    <figure class="skills__figure">
+                        <img class=" skills__img" src="./src/assets/github.svg" alt="logo GitHub" class="skill__icon">
+                        <figcaption class="skills__caption">GitHub<br><span class="skills__card-level"> Básico</span></figcaption>
+                    </figure>                      
+                </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact__left">
+
+                <h2 class="contact__title">¿Tienes un proyecto en mente? ¡Hablemos! Estoy listo para ayudarte.</h2>
+
+                <ul class="contact__list">
+                    <li class="contact__list-item">
+                        <a href="mailto:isazaj601@gmail.com" target="_blank" class="contact__link"> 
+                            isazaj601@gmail.com
+                        </a>
+                    </li>
+                    <li class="contact__list-item">
+                        <a href="https://github.com/JuanEstebanIG" target="_blank" class="contact__link">
+                            <img src="./src/assets/github.svg" alt="github icon" class="contact__icon">
+                            GitHub
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            
+            <form action="" method="" class="contact__form" id="contactForm">
+
+                <legend class="contact__form-title">Contáctame</legend>
+                <label for="correoUsuario" class="contact__label">
+                    <span class="contact__span">Tu correo:</span>
+                    <input type="email" id="correoUsuario" name="mail" class="contact__input" autocomplete="off" required>
+                </label>
+
+                <label for="mensaje" class="contact__label contact__label-textarea">
+                    <span class="contact__span">Deja tu mensaje aquí:</span>
+                    <textarea name="mensaje" id="mensaje" class="contact__textarea" autocomplete="off" required maxlength="600"></textarea>
+                </label>
+                <button type="submit" class="contact__button-submit">Enviar</button>
+            </form>
+            <div class="contact__state" id="stateCard">
+                <img class="contact__state-icon contact__state-icon-spiner" alt="Icon state" src="./src/assets/loading.svg" id="stateCardIcon">
+                <span id="cardStateText">Enviando mensaje...</span>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <p class="footer__paragraph">Hecho con ❤️ por Juan Esteban Isaza Gómez</p>
+
+        <ul class="footer__contact-list">
+            <li class="footer__contact-item">
+                <a href="mailto:isazaj601@gmail.com" target="_blank" class="footer__link">Contacto: 
+                    <span
+                        class="footer__mail">isazaj601@gmail.com
+                    </span>
+                </a>
+            </li>
+            <li class="footer__contact-item">
+                <a href="https://github.com/JuanEstebanIG" target="_blank" class="footer__link">
+                    <img src="./src/assets/github.svg" alt="github icon" class="footer__icon">
+                    GitHub
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="./src/js/main.js" type="module"></script>
+</body>
+</html>
