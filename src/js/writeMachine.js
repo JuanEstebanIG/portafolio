@@ -8,7 +8,7 @@ function pause(){
     clearInterval(interval)
     setTimeout(()=>{
         startWriteMachine()
-    },500)
+    },600)
 };
 
 function deleteText(paragraph){
@@ -45,5 +45,5 @@ export function startWriteMachine(){
         else if(isWriting){
             writeText(paragraph);
         }
-    },125);
+    },130);
 };
