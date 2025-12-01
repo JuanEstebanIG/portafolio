@@ -149,6 +149,10 @@ body {
 }
 
 @media (max-width: 500px) {
+    .menu__link:hover:after {
+        transform: translateX(0);
+    }
+
     .header__show-nav {
         visibility: visible;
     }
@@ -601,11 +605,14 @@ body {
     background-image: linear-gradient(to right, var(--thrid-color) 50%, transparent 50%);
     background-size: 350%;
     background-position: right;
-    transition: background-position .5s ease-out;
+    transition: background-position .5s ease-out, scale .4s ease-out, left .8s ease-in-out;
 }
 
 .project__link:hover {
     background-position: left;
+    scale: 1.04;
+    transform: translateX(-2px);
+    box-shadow: 3px 3px 0 #fff;
 }
 
 .project__link::after {
